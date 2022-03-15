@@ -1,7 +1,23 @@
 @charset "UTF-8";
 .header {
-  height: 100px;
-  width: 1152px;
+  height: 124px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  padding-right: 5%;
+  color: black;
+  text-decoration: none;
 }
 
 .footer {
@@ -31,29 +47,27 @@
   font-size: 20px;
 }
 
-.header-right li {
-  margin-left: 5%;
-}
-
 #wrap {
   display: none;
 }
 
 @media screen and (max-width: 767px) {
   .header {
-    width: 767px;
+    width: 100%;
     height: 100px;
+    position: relative;
   }
   .hamburger {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 15% 5% 0 auto;
   }
   .hamburger .pate,
   .hamburger .pate::before,
   .hamburger .pate::after {
-    width: 27%;
+    width: 100%;
     height: 5px;
-    margin-top: 5%;
     display: block;
     background-color: grey;
     border-radius: 2px;
@@ -75,6 +89,9 @@
   .hamburger .pate::after {
     top: 9px;
   }
+  #wrap:checked + .logo {
+    display: block;
+  }
   #wrap:checked + .hamburger .pate {
     background-color: transparent;
   }
@@ -95,13 +112,18 @@
   /* header-right一時的に非表示 */
   .header-right {
     position: fixed;
-    top: 0px;
-    right: -600px;
+    display: none;
+    top: 100px;
+    left: 0;
     height: 100vh;
-    width: 300px;
+    width: 390px;
     background-color: white;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+    text-align: center;
+  }
+  .header-right.on {
+    display: block;
   }
   .header-right ul {
     display: block;
@@ -113,6 +135,9 @@
   }
   #wrap:checked ~ .header-right {
     right: 0;
+  }
+  .footer {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,8 @@
 
 $(function() {
-  $('#nav-content li a').on('click', function(event) {
-    $('#nav-input').prop('checked', false);
-  });
+  $('.hamburger').on('click',function(){
+    $('.header-right').toggleClass('on');
+    console.log($('.header-right'));
+  })
+
 });
