@@ -1,18 +1,11 @@
+body{
+    font-family: "游ゴシック体", YuGothic;
+    width: 1152px;
+    margin-left: auto;
+    margin-right: auto
 
-// header=============================================
-.header{
-  height: 124px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  // align-items: center;
 }
-a{
- padding-right: 5%;
- color: black;
- text-decoration:none; 
-}
+<<<<<<< HEAD
 //footer=======================================
 .footer{
   background-color: black;
@@ -136,3 +129,12 @@ a{
 
 
 }
+=======
+@import "header.scss";
+
+@import "main.scss";
+
+@import "posts.scss";
+
+@import "footer.scss";
+>>>>>>> 81f8d973e8805b3b64a60cffe3ee1d9f34670d78

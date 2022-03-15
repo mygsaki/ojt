@@ -1,0 +1,93 @@
+.post-title{
+    margin-top: 520px;
+    text-align: center;
+}
+    #posts{
+    width: 100%;
+}
+
+.posts-wrap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.post{
+    width: 31%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    margin-bottom: 50px;
+}
+
+li h2{
+    font-family: "游ゴシック体", YuGothic;
+    color: black;
+    font-weight: lighter;
+    font-size: medium;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+date{
+    color: black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.readmore{
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    margin-top: 70px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.post:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 5px;
+    .underline::after {
+        width: 95px;
+      }
+}
+
+.underline {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    padding-bottom: 4px;
+    position: relative;
+  }
+  
+  .underline::after {
+    background-color: black;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1px;
+    right: 0;
+    position: absolute;
+    transition: .5s all;
+    width: 20px;
+  }
+  
+  .underline:hover::after {
+    width: 95px;
+  }
+
+  .post a{
+      height: 100%;
+  }
+
+  .thumbnail{
+      width: 100%;
+  }
