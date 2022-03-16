@@ -21,7 +21,7 @@ body {
           justify-content: center;
 }
 
-a {
+.header-right ul a {
   padding-right: 5%;
   color: black;
   text-decoration: none;
