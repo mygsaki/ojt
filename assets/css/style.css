@@ -1,9 +1,6 @@
 @charset "UTF-8";
 body {
   font-family: "游ゴシック体", YuGothic;
-  width: 1152px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .header {
@@ -21,7 +18,13 @@ body {
           justify-content: center;
 }
 
-.header-right ul a {
+.contents {
+  width: 1152px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
   padding-right: 5%;
   color: black;
   text-decoration: none;
@@ -42,18 +45,41 @@ body {
   display: none;
 }
 
+.menu-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+}
+
+.menu ul {
+  padding-right: 100px;
+}
+
+.menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 5% 0 5%;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 @media screen and (max-width: 767px) {
   .header {
     width: 100%;
-    height: 100px;
+    height: 200px;
     position: relative;
   }
   .hamburger {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     position: absolute;
     right: 20px;
-    top: 20px;
+    top: 60px;
   }
   .hamburger .pate,
   .hamburger .pate::before,
@@ -105,11 +131,11 @@ body {
   .header-right {
     position: fixed;
     display: none;
-    top: 100px;
+    top: 250px;
     left: 0;
     height: 100%;
-    width: 100%;
-    background-color: white;
+    width: 390px;
+    background-color: blue;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     text-align: center;
@@ -128,6 +154,14 @@ body {
   }
   #wrap:checked ~ .header-right {
     right: 0;
+  }
+  .menu-menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -222,6 +256,16 @@ header ul {
   line-height: 32px;
   width: 120px;
   z-index: 9999;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -182px;
+    left: 115px;
+  }
 }
 
 .post-title {
@@ -341,6 +385,33 @@ a {
 
 .thumbnail {
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .posts-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .contents {
+    width: 100%;
+    height: 100%;
+  }
+  .post {
+    width: 100%;
+  }
 }
 
 .footer {

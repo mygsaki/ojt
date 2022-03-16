@@ -77,3 +77,15 @@ display:none;
     z-index: 9999;
 }
 // もっと見るここまで
+@media screen and (max-width: 767px) {
+
+.logo{
+width: 130px;
+height: 130px;
+position: absolute;
+top: -182px;
+left: 115px;
+}
+
+
+}
