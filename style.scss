@@ -1,14 +1,10 @@
 body{
     font-family: "游ゴシック体", YuGothic;
-    width: 1152px;
-    margin-left: auto;
-    margin-right: auto
-
 }
-@import "header.scss";
+@import "header";
 
-@import "main.scss";
+@import "main";
 
-@import "posts.scss";
+@import "posts";
 
-@import "footer.scss";
+@import "footer";
