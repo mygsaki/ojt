@@ -13,11 +13,11 @@
   margin-right: auto;
 
 }
-a{
- padding-right: 5%;
- color: black;
- text-decoration:none; 
-}
+// a{
+//  padding-right: 5%;
+//  color: black;
+//  text-decoration:none; 
+// }
 
 .header-right  ul{
   display: flex;
@@ -42,7 +42,9 @@ a{
   padding: 0 5% 0 5%;
   font-weight: bold;
   font-size: 15px;
- 
+}
+a{
+  color: black;
 }
 
 // ハンバーガー===================
@@ -69,7 +71,7 @@ a{
     
     display: block;
     background-color: grey;
-    border-radius: 2px;
+    border-radius: 1px;
     transition: all .5s ease;
   }
 
@@ -118,7 +120,7 @@ a{
     // right: -600px;
     height: 100%;
     width: 390px;
-    background-color: blue;
+    background-color: white;
     transition: all .5s ease;
     text-align: center;
     z-index: 9999;
