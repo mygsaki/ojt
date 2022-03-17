@@ -3,15 +3,18 @@
         <section>
             <div class="main-box">
                 <img class = "logo" src="<?php echo get_template_directory_uri();?>/folder/logo.png" alt="">
-                <div class = "img-wrap">
-                     <img class = "mainvisu" src="<?php echo get_template_directory_uri();?>/folder/visual_1_pc.png" alt="">
+                <!-- <div class = "img-wrap"> -->
+                <?php
+echo do_shortcode('[smartslider3 slider="3"]');
+?>
+                     <!-- <img class = "mainvisu" src="<?php echo get_template_directory_uri();?>/folder/visual_1_pc.png" alt="">
                      <img class = "mainvisu" src="<?php echo get_template_directory_uri();?>/folder/visual_2_pc.png" alt="">
                      <img class = "mainvisu" src="<?php echo get_template_directory_uri();?>/folder/visual_3_pc.png" alt="">
                      <img class = "mainvisu" src="<?php echo get_template_directory_uri();?>/folder/visual_4_pc.png" alt="">
                      <img class = "mainvisu" src="<?php echo get_template_directory_uri();?>/folder/visual_5_pc.png" alt="">
                      <img class = "mainvisu" src="<?php echo get_template_directory_uri();?>/folder/visual_6_pc.png" alt="">
-                     <img class = "mainvisu" src="<?php echo get_template_directory_uri();?>/folder/visual_7_pc.png" alt="">
-                </div>
+                     <img class = "mainvisu" src="<?php echo get_template_directory_uri();?>/folder/visual_7_pc.png" alt=""> -->
+                <!-- </div> -->
                 <img class = "text-img" src="<?php echo get_template_directory_uri();?>/folder/visual_text_pc.png" alt="">
                 <p class = "top-title">進化し続ける「街」アメリカンビレッジマガジン</p>
             </div>
