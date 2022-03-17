@@ -6,9 +6,10 @@ header ul{
 .logo{
     position: absolute;
     top: -110px;
-    left: 15px;
+    left: -100px;
     z-index: 9899;
 }
+
 
 .main-box{
     display: flex;
@@ -36,7 +37,7 @@ header ul{
 
 .text-img{
     position: absolute;
-    right: 2px;
+    right: 68px;
     top: 236px;
     z-index: 9100;
 }
