@@ -1,3 +1,9 @@
+@mixin sp-screen {
+    @media screen and(max-width:767px){
+        @content;
+    }
+}
+
 header ul{
     display: flex;
     margin: 50px;
@@ -10,6 +16,18 @@ header ul{
     z-index: 9899;
 }
 
+.logo2{
+    display: none;
+    @include sp-screen{
+        display: block;
+        position: absolute;
+        top: -200px;
+        text-align: center;
+        width: 26%;
+
+    }
+}
+
 
 .main-box{
     display: flex;
@@ -19,6 +37,23 @@ header ul{
     position: relative;
     width: 1152px;
     margin: auto;
+    @include sp-screen{
+        display: none;
+    }
+}
+
+
+.main-box2{
+    display: none;
+    @include sp-screen{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
 }
 
 .mainvisu{
@@ -39,6 +74,14 @@ header ul{
     position: absolute;
     right: 68px;
     top: 236px;
+    z-index: 9100;
+}
+
+.text-img2{
+    width: 73%;
+    position: absolute;
+    left: 5%;
+    top: 5%;
     z-index: 9100;
 }
 
