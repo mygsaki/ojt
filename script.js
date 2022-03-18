@@ -1,4 +1,5 @@
 $(function(){
+  console.log('test');
   $('.hamburger').on('click',function(){
     $('.header-right').toggleClass('on');
     console.log($('.header-right'));
