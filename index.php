@@ -14,13 +14,15 @@
             <div class="main-box2">
             <img class = "logo2" src="<?php echo get_template_directory_uri();?>/folder/logo.png" alt="">
                 <?php
-                echo do_shortcode('[smartslider3 slider="5"]');
+                echo do_shortcode('[smartslider3 slider="4"]');
                 ?>
                 <img class = "text-img2" src="<?php echo get_template_directory_uri();?>/folder/visual_text_sp.png" alt="">
-                <p class = "top-title2">進化し続ける「街」アメリカンビレッジマガジン</p>
-            </div>
+                <p class = "top-title2">進化し続ける「街」</p>
+                <p class = "top-title2">アメリカンビレッジマガジン</p>
+            </div> 
 
         </section>
+        <div class="contents">
         <h2 class = post-title>Latest Articles</h2>
         <section id = "posts">
         <?php if (have_posts()): ?>

@@ -21,9 +21,9 @@ header ul{
     @include sp-screen{
         display: block;
         position: absolute;
-        top: -200px;
+        top: -140px;
         text-align: center;
-        width: 26%;
+        width: 30%;
 
     }
 }
@@ -64,15 +64,15 @@ header ul{
 
 .top-title{
     position: absolute;
-    top: 440px;
-    left: 40px;
+    top: 463px;
+    left: -55px;
     font-family: "游ゴシック体", YuGothic;
     font-size: 20px;
 }
 
 .text-img{
     position: absolute;
-    right: 68px;
+    right: -60px;
     top: 236px;
     z-index: 9100;
 }
@@ -136,6 +136,10 @@ left: 115px;
 }
 .post-title{
     font-size: 35px;
+}
+.top-title2{
+    margin: 0;
+    padding-top: 13px;
 }
 
 }

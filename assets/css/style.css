@@ -70,7 +70,7 @@ a {
 @media screen and (max-width: 767px) {
   .header {
     width: 100%;
-    height: 200px;
+    height: 160px;
     position: relative;
   }
   .hamburger {
@@ -130,7 +130,7 @@ a {
   .header-right {
     position: fixed;
     display: none;
-    top: 250px;
+    top: 200px;
     left: 0;
     height: 100%;
     width: 100%;
@@ -190,9 +190,9 @@ header ul {
   .logo2 {
     display: block;
     position: absolute;
-    top: -200px;
+    top: -140px;
     text-align: center;
-    width: 26%;
+    width: 30%;
   }
 }
 
@@ -254,15 +254,15 @@ header ul {
 
 .top-title {
   position: absolute;
-  top: 440px;
-  left: 40px;
+  top: 463px;
+  left: -55px;
   font-family: "游ゴシック体", YuGothic;
   font-size: 20px;
 }
 
 .text-img {
   position: absolute;
-  right: 68px;
+  right: -60px;
   top: 236px;
   z-index: 9100;
 }
@@ -321,6 +321,16 @@ header ul {
     position: absolute;
     top: -182px;
     left: 115px;
+  }
+  .top-title {
+    font-size: 15px;
+  }
+  .post-title {
+    font-size: 35px;
+  }
+  .top-title2 {
+    margin: 0;
+    padding-top: 13px;
   }
 }
 
@@ -462,11 +472,15 @@ a {
     padding: 0;
   }
   .contents {
-    width: 100%;
+    width: 85%;
     height: 100%;
   }
   .post {
     width: 100%;
+  }
+  .post-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 }
 
